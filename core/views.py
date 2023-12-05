@@ -6,3 +6,7 @@ def index(request):
 
 def activacion(request):
     return HttpResponse("Aqui esta el modulo activacion")
+
+def login(request):
+    return HttpResponse("Hola, soy login")
+
