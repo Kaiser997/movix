@@ -1,9 +1,12 @@
 from django.db import models
 
 class Persona(models.Model):
-    nombre = models.CharField(max_length=200, null=False)
-    apellido = models.CharField(max_length=200, null=False)
+    primer_nombre = models.CharField(max_length=200, null=False)
+    primer_apellido = models.CharField(max_length=200, null=True)
+    segundo_nombre = models.CharField(max_length=200, null=False)
+    segundo_apellido = models.CharField(max_length=200, null=True)
     identificacion = models.CharField(max_length=200, null=False)
+    tipo_identificacion = models.CharField(max_length=5, null=True)
     correo = models.CharField(max_length=50)
     celular = models.CharField(max_length=20)
 
