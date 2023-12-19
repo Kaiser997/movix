@@ -1,10 +1,7 @@
 from django.urls import path
 
-from . import views
+from core.views import PersonListAPIView
 
 urlpatterns = [
-    path("", views.index, name="index"),
-    path("activacion/", views.activacion, name="activacion"),
-    path("login/", views.login, name="login"),
-
+    path("patients/", PersonListAPIView.as_view(), name="patients")
 ]
