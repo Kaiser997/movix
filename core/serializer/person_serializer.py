@@ -9,5 +9,3 @@ class PersonaSerializer(serializers.ModelSerializer):
         'identificacion', 'tipo_identificacion',
         'correo','celular']
 
-
-
